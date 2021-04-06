@@ -13,3 +13,45 @@ body{
     margin: 0 auto;
 }
 
+.flex-container {
+    display:flex;
+    background: #fff;
+    flex-wrap: wrap;
+    flex-flow: row;
+    /* justify-content: flex-end; */
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    /* grow-axis height:100px; */
+    width: 100px;
+    /* grow   min-width:100px; */
+    /* shrink    width: 320px; */
+    /* min-width: 200px; */
+    /* wrap    flex-grow: 1; */
+    /* flex-basis: 200px; */
+    flex-basis: 0 0 100px;
+}
+
+.one {
+    background: red;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    flex-basis: 100px;
+}
+
+.two {
+    background: blue;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    flex-basis: 200px;
+}
+
+.three {
+    background: green; 
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+    flex-basis: 300px;
+}
